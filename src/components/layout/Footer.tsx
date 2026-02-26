@@ -13,19 +13,24 @@ export function Footer() {
               AMNC<span className="text-brand-gray-light">Tech</span>
             </a>
             <p className="mt-2 max-w-xs text-sm text-brand-gray-mid">
-              Soluções em SaaS, CRMs e Automações com IA para transformar seu
-              negócio.
+              Automações inteligentes com IA para empresas que querem escalar
+              sem aumentar a equipe.
             </p>
           </div>
 
-          <nav className="flex gap-8">
-            {["Início", "Serviços", "Sobre", "Contato"].map((item) => (
+          <nav className="flex flex-wrap justify-center gap-8">
+            {[
+              { label: "Problemas", href: "#problemas" },
+              { label: "Soluções", href: "#solucoes" },
+              { label: "Como Funciona", href: "#como-funciona" },
+              { label: "Contato", href: "#contato" },
+            ].map((item) => (
               <a
-                key={item}
-                href={`#${item.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")}`}
+                key={item.href}
+                href={item.href}
                 className="text-sm text-brand-gray-mid transition-colors hover:text-brand-white"
               >
-                {item}
+                {item.label}
               </a>
             ))}
           </nav>

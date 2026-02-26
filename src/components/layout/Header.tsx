@@ -3,8 +3,9 @@ import { Menu, X } from "lucide-react";
 
 const NAV_LINKS = [
   { label: "Início", href: "#inicio" },
-  { label: "Serviços", href: "#servicos" },
-  { label: "Sobre", href: "#sobre" },
+  { label: "Problemas", href: "#problemas" },
+  { label: "Soluções", href: "#solucoes" },
+  { label: "Como Funciona", href: "#como-funciona" },
   { label: "Contato", href: "#contato" },
 ] as const;
 

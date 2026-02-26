@@ -1,8 +1,9 @@
 import { Header } from "./components/layout/Header";
 import { Footer } from "./components/layout/Footer";
 import { Hero } from "./components/sections/Hero";
-import { Services } from "./components/sections/Services";
-import { About } from "./components/sections/About";
+import { Problems } from "./components/sections/Problems";
+import { Solutions } from "./components/sections/Solutions";
+import { HowItWorks } from "./components/sections/HowItWorks";
 import { Contact } from "./components/sections/Contact";
 
 export default function App() {
@@ -11,8 +12,9 @@ export default function App() {
       <Header />
       <main>
         <Hero />
-        <Services />
-        <About />
+        <Problems />
+        <Solutions />
+        <HowItWorks />
         <Contact />
       </main>
       <Footer />
